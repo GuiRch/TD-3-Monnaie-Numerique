@@ -50,7 +50,7 @@ RestartSec=5
 WantedBy=default.target
 ```
 
-Puis on autorise le service : ``sudo systemctl --user enable geth.service`` et on le lance ``systemctl --user start geth.service`` (s'assurer avant que geth ne tourne pas en fond).
+Puis autoriser le service : ``sudo systemctl --user enable geth.service`` et le lancer ``systemctl --user start geth.service`` (s'assurer avant que geth ne tourne pas en fond).
 
 ## Open the RPC API to interact with your node (2 pts)
 
@@ -67,3 +67,4 @@ Puis on autorise le service : ``sudo systemctl --user enable geth.service`` et o
 * https://developernote.com/2020/11/a-proper-ubuntu-18-04-installation-for-running-ethereum-node/
 * Pour ouvrir la console Javascript : https://ethereum.org/uk/developers/tutorials/run-light-node-geth/
 
+tunnel ssh 
