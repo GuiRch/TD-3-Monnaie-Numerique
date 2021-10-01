@@ -36,6 +36,22 @@ Cette commande utilise le mode de synchronisation "Snap" qui est le mode de sync
 
 ## Turning Geth into a service 
 
+On commence par créer un fichier de configuration système *"geth.service"*, ``sudo nano /etc/systemd/system/geth.service`` dans lequel on insère les informations suivantes :
+
+```
+[Unit]
+Description=Ethereum go client
+[Service]
+Type=simple
+ExecStart=geth --rinkeby
+Restart=on-failure
+RestartSec=5
+[Install]
+WantedBy=default.target
+```
+
+Puis on autorise le service : ``sudo systemctl --user enable geth.service`` et on le lance ``systemctl --user start geth.service`` (s'assurer avant que geth ne tourne pas en fond).
+
 ## Open the RPC API to interact with your node (2 pts)
 
 ## Connect to the Geth console and extract last block number (2 pts)
