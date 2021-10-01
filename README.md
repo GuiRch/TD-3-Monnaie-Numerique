@@ -67,4 +67,4 @@ Puis autoriser le service : ``sudo systemctl --user enable geth.service`` et le 
 * https://developernote.com/2020/11/a-proper-ubuntu-18-04-installation-for-running-ethereum-node/
 * Pour ouvrir la console Javascript : https://ethereum.org/uk/developers/tutorials/run-light-node-geth/
 
-tunnel ssh 
+tunnel ssh machine -> vm pour pouvoir se connecter sur le port 8085
