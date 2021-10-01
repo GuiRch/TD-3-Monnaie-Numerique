@@ -48,5 +48,5 @@ Cette commande utilise le mode de synchronisation "Snap" qui est le mode de sync
 
 * https://geth.ethereum.org/docs/install-and-build/installing-geth#install-on-ubuntu-via-ppas
 * https://priyalwalpita.medium.com/setting-up-the-go-ethereum-geth-environment-in-ubuntu-linux-67c09706b42
-* https://priyalwalpita.medium.com/setting-up-the-go-ethereum-geth-environment-in-ubuntu-linux-67c09706b42
+* https://developernote.com/2020/11/a-proper-ubuntu-18-04-installation-for-running-ethereum-node/
 
