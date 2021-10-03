@@ -54,7 +54,10 @@ Puis autoriser le service : ``sudo systemctl --user enable geth.service`` et le 
 
 ## Open the RPC API to interact with your node (2 pts)
 
-## Connect to the Geth console and extract last block number (2 pts)
+## Connect to the Geth console and extract last block number
+
+![eth syncing](https://user-images.githubusercontent.com/62909821/135761643-4830151f-2da8-413a-9aba-2107d3f3ecfb.PNG)
+
 
 ## Connect to the Geth console and show events data from a specific transaction (2 pts)
 
