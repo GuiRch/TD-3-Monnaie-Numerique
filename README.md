@@ -56,8 +56,15 @@ Puis autoriser le service : ``sudo systemctl --user enable geth.service`` et le 
 
 ## Connect to the Geth console and extract last block number
 
-![eth syncing](https://user-images.githubusercontent.com/62909821/135761643-4830151f-2da8-413a-9aba-2107d3f3ecfb.PNG)
+Dans le dossier caché `.ethereum` se trouve un fichier `geth.ipc`. Ce fichier peut être contenu dans un autre dossier lui même dans le dossier `.ethereum` si la synchronisation n'a pas été faite sur le mainet. Dans notre cas nous avons fait notre syncrhonisation sur le testnet Rinkeby, donc le fichier geth.ipc se trouve dans le dossier `.ethereum/rinkeby/`.
 
+Pour ouvrir la console javascript nous utilisons la commande : `geth attach .ethereum/rinkeby/geth.ipc`.
+
+Enfin pour afficher le numéro du dernier block il faut lancer la commande `eth.blockNumber` dans la console
+
+Si la chaine est en cours de synchronisation il est également possible d'utiliser la commande `eth.syncing` qui affiche le dernier block mais également le dernier block synchronisé.
+
+![eth syncing](https://user-images.githubusercontent.com/62909821/135761643-4830151f-2da8-413a-9aba-2107d3f3ecfb.PNG)
 
 ## Connect to the Geth console and show events data from a specific transaction (2 pts)
 
