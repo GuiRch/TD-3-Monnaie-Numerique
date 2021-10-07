@@ -1,5 +1,9 @@
 # TD-3-Monnaie-Numerique
 
+## Install UFW 
+
+On procède de la même manière que les TD précédents
+
 ## Installing dependencies
 
 Nous avons supposé que nous aurions besoin de Javascript pour la suite du TD, donc d'entrée de jeu nous avons décidé d'installer node.js et npm via les commande :
@@ -52,7 +56,7 @@ WantedBy=default.target
 
 Puis autoriser le service : ``sudo systemctl --user enable geth.service`` et le lancer ``systemctl --user start geth.service`` (s'assurer avant que geth ne tourne pas en fond).
 
-## Open the RPC API to interact with your node (2 pts)
+## Open the RPC API to interact with your node 
 
 ## Connect to the Geth console and extract last block number
 
@@ -66,7 +70,16 @@ Si la chaine est en cours de synchronisation il est également possible d'utilis
 
 ![eth syncing](https://user-images.githubusercontent.com/62909821/135761643-4830151f-2da8-413a-9aba-2107d3f3ecfb.PNG)
 
-## Connect to the Geth console and show events data from a specific transaction (2 pts)
+## Connect to the Geth console and show events data from a specific transaction 
+
+Il est possible de retrouver une transaction spécifiques et les informations relatives grâce au hash de transaction et avec la console geth.
+Pour cela il faut une transaction faisant partie des blocks déjà synchronisé sur la VM et on utilise la commande `eth.getTransation('<hash_de_la_transaction>')`
+
+![eth get transaction](https://user-images.githubusercontent.com/62909821/136461879-888739cf-4c89-43a8-96d1-0e840698d51b.PNG)
+
+Il existe plusieurs autres méthode que l'on peut utiliser grâce à l'API web3. Ces méthodes sont :
+
+![fonctions eth](https://user-images.githubusercontent.com/62909821/136462280-8cf524e0-a4d2-4f07-ab16-6860f27f802f.PNG)
 
 ## Configure truffle to deploy a smart contract through your node (2 pts)
 
